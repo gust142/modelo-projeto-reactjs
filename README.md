@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Modelo de projeto em React JS com a utilização de React-hooks para configuração de rotas
 
 ## Available Scripts
 
