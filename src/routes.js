@@ -1,19 +1,14 @@
 import React, { Suspense, lazy} from 'react';
 import {HashRouter, Switch, Route} from 'react-router-dom';
-
-const home = lazy(() => import('./pages/home'))
-const admin = lazy(() => import('./pages/admin'))
-const cadastro = lazy(() => import('./pages/cadastro'))
-
+import HomePage from './views/home'
+import CadastroPage from './views/cadastro'
 
 export default () => (
     <HashRouter>
         <Suspense fallback={<div></div>}>
             <Switch>
-                <Route exact path="/" component={home} />
-                <Route exact path="/admin" component={admin} />
-                <Route exact path="/cadastro" component={cadastro} />
-               
+                <Route exact path="/" component={HomePage} />
+                <Route exact path="/cadastro" component={CadastroPage} />
             </Switch>
         </Suspense>
     </HashRouter>
