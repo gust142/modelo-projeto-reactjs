@@ -1,9 +1,7 @@
 import React from 'react';
 import Routes from './routes';
-import { Grid ,CssBaseline, ListItemAvatar, List } from '@material-ui/core';
-import { Container } from './styles'
+import { Grid ,CssBaseline} from '@material-ui/core';
 
-const content = () => <Grid id='center-container' item xs={12}> <Routes></Routes> </Grid>
 
 
 export default function App() {
@@ -11,7 +9,7 @@ export default function App() {
   return (
     <>
     <CssBaseline></CssBaseline>
-    <Grid id='center-container' item xs={12}> <Routes></Routes> </Grid>
+    <Grid item xs={12}> <Routes></Routes> </Grid>
       
   </>
   );

@@ -1,4 +1,4 @@
-import React, { Suspense, lazy} from 'react';
+import React, { Suspense} from 'react';
 import {HashRouter, Switch, Route} from 'react-router-dom';
 import HomePage from './views/home'
 import CadastroPage from './views/cadastro'
